@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>8. JavaScript Arrays</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <script type="text/javascript">
+            var candidates = [];
+            candidates[0] = "locke";
+            candidates[1] = "reyes";
+            candidates[2] = "ford";
+            
+            alert("Jacob chooses: " + candidates[1]);
+            
+            var candidates = ["locke", "sheppard", "kwon"];
+            
+            var flightDate = new Date("September 22, 2004");
+            var myValues = ["oceanic", 815, flightDate];
+            
+            for(i in myValues){
+                document.write("<br />" + myValues[i]);
+            }
+            
+            //  Associative arrays
+            var caveList = [];
+            caveList["locke"] = 4;
+            caveList["reyes"] = 8;
+            caveList["ford"] = 15;
+            caveList["jarrah"] = 16;
+            caveList["shepherd"] = 23;
+            caveList["kwon"] = 42;
+            
+            alert("Sawyer's number: " + caveList["ford"]);
+            
+        </script>
+    
+    </head>
+    
+    <body>
+        <h1>8. JavaScript Arrays</h1>
+    </body>
+</html>

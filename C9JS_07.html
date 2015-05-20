@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>7. JavaScript Functions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript">
+           
+            // Function literal
+            var addMe = function(){
+                return arguments[0] + arguments[1];
+            }
+    
+            alert("addMe(1,2); returns :" + addMe(1,2));
+            
+            
+            var myFunc = function(){
+                var myResult = 0;
+                for(i=0; i<arguments.length; i++){
+                    myResult+= arguments[i];
+                }
+                return ((myResult < 10) ? true : false);
+            }
+            
+            alert(myFunc(1,11));
+    
+            alert(((myFunc(1,9,3)) ? "myResult is less than 10":"myResult is greater than 10"));
+            
+            
+            //  Anonymous Function
+            var myResult = (function() {
+                return arguments[0] + arguments[1];
+            })(1,2);
+            
+            alert(myResult);
+            
+            //  Class
+            var Person = (function(fName, lName, mI){
+               this.firstName = fName;
+               this.lastName = lName;
+               this.middleInitial = mI;
+               
+               this.age = 0;
+               
+               this.height = 0;
+               this.weight = 0;
+               
+               this.getFullName = function (){
+                   return this.firstName + " " + this.middleInitial + " " + this.lastName;
+               }
+               
+               this.getHeightInFeet = function (){
+                   return height/12;
+               }
+               
+            });
+            
+            function addCustomer(){
+                var customer = new Person("Dave", "Brubaker", "A");
+                
+                alert(customer.getFullName());
+            }
+                
+            
+        </script>
+        
+    </head>
+    <body>
+        <h1>7. JavaScript Functions</h1>
+        <input type="submit" value="Click me" onclick="addCustomer();" />
+    </body>
+</html>

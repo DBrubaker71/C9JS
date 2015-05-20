@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>6. Conditional Logic in JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript">
+        
+            var someValue = 24;
+            var otherValue = 23;
+            
+            if(someValue > 30){
+                alert("someValue: " + someValue + " " + "is greater then 30");
+            }
+            else if(someValue < 30){
+                alert("someValue: " + someValue + " " + "is less than 30");
+            }
+            else {
+                //  Catch all
+            }
+            
+            myResult = (3 === "3") ? "true":"false";
+            alert(myResult);
+        
+            var rightNow = new Date();
+            var currentHour = rightNow.getHours();
+            
+            switch(true)
+            {
+                case (currentHour > 8 && currentHour < 12):
+                    document.write("Good Morning!");
+                    break;
+                case (currentHour >= 12 && currentHour < 5):
+                    document.write("Good afternoon!")
+                    break;
+                case (currentHour >= 5 && currentHour < 10):
+                    document.write("Good Evening!")
+                    break;
+                default:
+                    document.write("Go to bed!");
+                    break;
+            }
+        
+        </script>
+        
+    </head>
+    <body>
+        <h1>6. Conditional logic in JavaScript</h1>
+    </body>
+</html>
