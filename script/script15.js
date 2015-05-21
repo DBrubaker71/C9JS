@@ -1,7 +1,7 @@
 $(function() {
 	
 	//	By id
-	//		$('#first').addClass('highlight');
+	//	$('#first').addClass('highlight');
 	
 	//	By Element
 	//	$('p').addClass('highlight');
@@ -16,7 +16,7 @@ $(function() {
 	//	$('li:contains("Three")').addClass('highlight');
 	
 	//	Next, Previous
-	//$('li:contains("Three")').next.addClass('highlight');
+	//	$('li:contains("Three")').next.addClass('highlight');
 	
 	//	Siblings, parent
 	//	$('li:contains("Three")').parent().addClass('highlight');
