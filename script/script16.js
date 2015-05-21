@@ -13,7 +13,7 @@ $(function() {
 		$('#score').text(score);
 		
 		//	Show success
-		$('#success').show('fast').fadeOut(2000);
+		$('#success').show('fast').fadeOut(1000);
 		
 	});
 
